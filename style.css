@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+body{
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 10vh;
+    color: white; 
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.logo{
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #bf55ec;
+    text-shadow: 2px 2px 2px black;
+}
+.menu li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+.menu li a{
+    font-weight: bold;
+    font-size: 130%;
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+main h1{
+    color: white;
+}
+main h2{
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 55px;
+}
+
+.changing:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #bf55ec;
+}
+
+@keyframes changetext{
+    0%{content: "Shaniwar Wada";}
+    10%{content: "Sinhgad Fort";}
+    20%{content: "Pataleshwar Caves";}
+    30%{content: "Dagdusheth Mandir";}
+    40%{content: "Parvati Hills";}
+    50%{content: "Khadakwasla Dam";}
+    60%{content: "Rajiv Gandhi Zoological Park";}
+    70%{content: "National Defence Academy";}
+    80%{content: "Okayama Friendship Garden";}
+    90%{content: "Taljai Hills";}
+    100%{content: "National War Museum";}
+}
+
+.pic{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 150px;
+    padding: 3px;
+    border: 1px solid #bf55ec;
+    border-radius: 3px 3px 3px 3px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.box{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+img:hover{
+    transform: scale(1.5,1.5);
+    transition: .3s transform;
+    border-radius: 5px;
+}
+
+.box h1{
+    text-align: center;
+    margin-top: 30px;
+    color: #bf55ec;
+    text-shadow: 2px 2px 3px black;
+    font-size: 40px;
+}
+
+.details{
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flexbox;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.details h1{
+    text-align: center;
+    color: #bf55ec;
+    text-shadow: 2px 2px 3px black;
+    font-size: 40px;
+}
+
+.info{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.contact{
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flexbox;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.contact h1{
+    font-size: 40px;
+    text-align: center;
+    color: #bf55ec;
+    text-shadow: 2px 2px 3px black;
+}
